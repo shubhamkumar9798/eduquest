@@ -5,8 +5,11 @@ import Image from "next/image";
 import AboutSection from "@/components/about";
 import MaskedDivDemo from "@/components/abtfeatures";
 import Link from "next/link";
+import { useAuth } from "@/contexts/AuthContext";
 
 export default function LandingPage() {
+  const { user } = useAuth();
+
   return (
     <div className="w-full min-h-screen flex flex-col bg-gradient-to-b from-purple-900 via-purple-800 to-purple-950 relative overflow-hidden">
       {/* Background Blobs */}
@@ -31,20 +34,30 @@ export default function LandingPage() {
 
         {/* Top Navbar Buttons */}
         <div className="absolute top-6 right-6 flex gap-3 z-20">
-          <Link href="/auth/login" passHref>
-            <Button
-              variant="outline"
-              className="border-purple-400 text-purple-300 hover:bg-purple-500 hover:text-white"
-            >
-              Login
-            </Button>
-          </Link>
+          {!user ? (
+            <>
+              <Link href="/auth/login" passHref>
+                <Button
+                  variant="outline"
+                  className="border-purple-400 text-purple-300 hover:bg-purple-500 hover:text-white"
+                >
+                  Login
+                </Button>
+              </Link>
 
-          <Link href="/auth/register" passHref>
-            <Button className="bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white font-semibold shadow-md">
-              Register
-            </Button>
-          </Link>
+              <Link href="/auth/register" passHref>
+                <Button className="bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white font-semibold shadow-md">
+                  Register
+                </Button>
+              </Link>
+            </>
+          ) : (
+            <Link href="/dashboard" passHref>
+              <Button className="bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white font-semibold shadow-md">
+                Go to Dashboard
+              </Button>
+            </Link>
+          )}
         </div>
 
         {/* Covering the "Built with Spline" watermark */}
