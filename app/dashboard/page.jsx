@@ -28,8 +28,16 @@ export default function Dashboard() {
         {/* Navbar on top */}
         <Navbar />
 
+        {/* Pixel Welcome Text */}
+        <div className="absolute inset-0 flex justify-center z-20">
+  <h1 className="mt-24 text-5xl md:text-5xl font-bold text-white drop-shadow-[0_4px_6px_rgba(0,0,0,0.6)] tracking-wider font-mono animate-pulse">
+    Welcome back, Adventurer
+  </h1>
+</div>
+
+
         {/* Overlay Tagline */}
-        <div className="absolute bottom-5 right-4 bg-white/20 text-purple-100 text-lg font-semibold px-3 py-1 rounded-lg shadow-md backdrop-blur-md">
+        <div className="absolute bottom-5 right-4 bg-white/20 text-purple-100 text-lg font-semibold px-3 py-1 rounded-lg shadow-md backdrop-blur-md z-20">
           Learn with Fun
         </div>
       </section>
