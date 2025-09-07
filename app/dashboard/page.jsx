@@ -26,6 +26,7 @@ export default function Dashboard() {
         <Spline scene="https://prod.spline.design/ZQUUklRCZbhiIno7/scene.splinecode" />
       </div>
 
+
       {/* Navbar */}
       <Navbar />
 
