@@ -28,10 +28,10 @@ export default function Navbar() {
         {/* Logo Section - Left */}
         <div className="flex items-center space-x-3">
           <Image
-            src="/saklogo1.png"
+            src="/eduqu1.png"
             alt="Saksham Logo"
-            width={120}
-            height={40}
+            width={180}
+            height={60}
             className="object-contain drop-shadow-lg"
           />
         </div>

@@ -16,6 +16,16 @@ export default function EscapeRoomIframe({ src }) {
         className="w-full h-full border-none"
         allowFullScreen
       />
+
+      {/* Bottom-left overlay box (hides Genially branding) */}
+      <div className="absolute bottom-2 left-2 bg-purple-800/70 text-white text-sm md:text-base font-semibold px-3 py-2 rounded-lg shadow-lg backdrop-blur-sm">
+        Escape Room by Saksham
+      </div>
+
+      {/* Bottom-right overlay box (hides Share icon/logo) */}
+      <div className="absolute bottom-1 right-1 bg-pink-600/70 text-white text-lg md:text-base font-semibold px-3 py-2 rounded-lg shadow-lg backdrop-blur-sm">
+        Gamified Learning
+      </div>
     </div>
   );
 }

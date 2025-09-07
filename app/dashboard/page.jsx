@@ -23,23 +23,17 @@ export default function Dashboard() {
     <main className="relative min-h-screen w-full font-sans overflow-hidden">
       {/* Background Spline */}
       <div className="absolute inset-0 -z-10">
-        <Spline scene="https://prod.spline.design/nhrL2wWCmsPAQ1-9/scene.splinecode" />
+        <Spline scene="https://prod.spline.design/ZQUUklRCZbhiIno7/scene.splinecode" />
       </div>
 
       {/* Navbar */}
       <Navbar />
 
       {/* Center Image */}
-      <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
-        <Image
-          src="/dash2.png"
-          alt="Saksham Logo"
-          width={600}
-          height={200}
-          priority
-          className="w-[70%] md:w-[40%] h-auto drop-shadow-lg"
-        />
-      </div>
+      
+      <div className="absolute bottom-5 right-4 bg-white/20 text-purple-100 text-lg font-semibold px-3 py-1 rounded-lg shadow-md backdrop-blur-md">
+             Learn with Fun
+        </div>
     </main>
   );
 }
