@@ -43,41 +43,25 @@ export default function Navbar() {
               <NavigationMenuTrigger className="bg-transparent text-white/90 hover:text-white hover:bg-white/10 transition-all duration-200 border-0 backdrop-blur-sm">
                 Dashboard
               </NavigationMenuTrigger>
-              <NavigationMenuContent className="bg-black/20 backdrop-blur-xl border border-white/20 rounded-lg shadow-2xl">
-                <div className="p-4 space-y-2 min-w-[200px]">
-                  <NavigationMenuLink 
-                    href="/dashboard"
-                    className="block px-3 py-2 text-white/90 hover:text-white hover:bg-white/10 rounded-md transition-all duration-200"
-                  >
-                    Overview
-                  </NavigationMenuLink>
-                  <NavigationMenuLink 
-                    href="/dashboard/stats"
-                    className="block px-3 py-2 text-white/90 hover:text-white hover:bg-white/10 rounded-md transition-all duration-200"
-                  >
-                    Stats
-                  </NavigationMenuLink>
-                </div>
-              </NavigationMenuContent>
             </NavigationMenuItem>
 
-            <NavigationMenuItem>
+            {/* <NavigationMenuItem>
               <NavigationMenuLink 
                 href="/profile"
                 className="px-3 py-2 text-white/90 hover:text-white hover:bg-white/10 rounded-lg transition-all duration-200 backdrop-blur-sm"
               >
                 Profile
               </NavigationMenuLink>
-            </NavigationMenuItem>
+            </NavigationMenuItem> */}
 
-            <NavigationMenuItem>
+            {/* <NavigationMenuItem>
               <NavigationMenuLink 
                 href="/settings"
                 className="px-3 py-2 text-white/90 hover:text-white hover:bg-white/10 rounded-lg transition-all duration-200 backdrop-blur-sm"
               >
                 Settings
               </NavigationMenuLink>
-            </NavigationMenuItem>
+            </NavigationMenuItem> */}
 
              <NavigationMenuItem>
               <NavigationMenuLink 
