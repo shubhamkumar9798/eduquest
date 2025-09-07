@@ -23,7 +23,7 @@ export default function Navbar() {
     <div className="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-transparent">
       <div className="flex items-center justify-between px-6 py-3 max-w-7xl mx-auto w-full">
         {/* Logo Section - Left */}
-        <Link href="/dashboard" className="flex items-center space-x-3">
+        <Link href="/" className="flex items-center space-x-3">
           <Image
             src="/eduqu1.png"
             alt="EduQuest Logo"
