@@ -17,7 +17,7 @@ const orbitron = Orbitron({
   subsets: ["latin"],
   weight: ["400", "700", "900"], // choose the weights you need
   variable: "--font-orbitron",
-});
+}); 
 
 export const metadata: Metadata = {
   title: "Saksham",
