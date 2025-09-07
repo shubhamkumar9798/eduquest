@@ -73,6 +73,24 @@ export default function Navbar() {
                 Course World
               </NavigationMenuLink>
             </NavigationMenuItem>
+            <NavigationMenuItem>
+              <NavigationMenuLink
+                href="/twinai"
+                className="px-3 py-2 text-white/90 hover:text-white hover:bg-white/10 rounded-lg transition-all duration-200"
+              >
+                Twin AI
+              </NavigationMenuLink>
+            </NavigationMenuItem>
+
+<NavigationMenuItem>
+              <NavigationMenuLink
+                href="/memes"
+                className="px-3 py-2 text-white/90 hover:text-white hover:bg-white/10 rounded-lg transition-all duration-200"
+              >
+                Memes
+              </NavigationMenuLink>
+            </NavigationMenuItem>
+
 
             <NavigationMenuItem>
               <button
@@ -81,6 +99,12 @@ export default function Navbar() {
               >
                 Logout
               </button>
+            </NavigationMenuItem>
+
+            <NavigationMenuItem 
+                className="px-3 py-2 text-red-300 hover:text-red-200 hover:bg-red-500/20 rounded-lg transition-all duration-200"
+              >
+                XP: 20
             </NavigationMenuItem>
           </NavigationMenuList>
         </NavigationMenu>
